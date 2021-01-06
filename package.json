@@ -4,13 +4,20 @@
   "private": true,
   "dependencies": {
     "@sanity/client": "^2.1.0",
+    "@tensorflow-models/face-landmarks-detection": "0.0.2",
+    "@tensorflow-models/facemesh": "0.0.5",
+    "@tensorflow/tfjs": "^2.8.2",
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
+    "autoprefixer": "^10.2.0",
+    "postcss": "^8.2.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
+    "react-webcam": "^5.2.2",
+    "tailwindcss": "^2.0.2",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

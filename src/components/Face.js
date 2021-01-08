@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import * as tf from "@tensorflow/tfjs"; //needed
+import * as tf from "@tensorflow/tfjs"; 
 import * as facemesh from "@tensorflow-models/face-landmarks-detection";
 import Webcam from "react-webcam";
 import { drawMesh } from "../utils/utility";
@@ -31,7 +31,7 @@ export default function Face(){
       ) {
 
          // Get Video Properties
-         const video = webcamRef.current.video;
+         //const video = webcamRef.current.video;
          const videoWidth = webcamRef.current.video.videoWidth;
          const videoHeight = webcamRef.current.video.videoHeight;
    
@@ -66,8 +66,9 @@ export default function Face(){
                 right: 0,
                 textAlign: "center",
                 zindex: 9,
-                width: 640,
-                height: 480,
+                width: 1136,
+                height: 640,
+                opacity:0
               }}
             />
     
@@ -81,8 +82,8 @@ export default function Face(){
                 right: 0,
                 textAlign: "center",
                 zindex: 9,
-                width: 640,
-                height: 480,
+                width: 1136,
+                height: 640,
               }}
             />
         </div>

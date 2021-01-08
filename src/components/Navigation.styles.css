@@ -1,0 +1,26 @@
+.nav-selection:hover svg {
+  animation: spin 1s linear infinite;
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+/* .nav-selection:hover {
+  --tw-translate-x: 1.25rem;
+} */
+
+/* .nav-selection:hover > .section-title {
+  display: "block";
+}
+
+.section-title {
+  position: relative;
+  color: white;
+  display: none;
+} */

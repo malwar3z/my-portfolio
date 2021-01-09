@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.0.0",
+    "@nivo/circle-packing": "^0.67.0",
+    "@nivo/core": "^0.67.0",
     "@sanity/client": "^2.1.0",
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "@tensorflow-models/face-landmarks-detection": "0.0.2",
@@ -13,6 +15,7 @@
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
     "autoprefixer": "^9.8.6",
+    "nivo": "^0.31.0",
     "postcss": "^7.0.35",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

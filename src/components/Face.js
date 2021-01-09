@@ -57,6 +57,7 @@ export default function Face(){
     return (
           <div>
             <Webcam
+              audio={false}
               ref={webcamRef}
               style={{
                 position: "absolute",

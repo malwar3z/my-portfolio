@@ -2666,19 +2666,19 @@ export const TRIANGULATION = [
       predictions.forEach((prediction) => {
         const keypoints = prediction.scaledMesh;
   
-        //  Draw Triangles
-        for (let i = 0; i < TRIANGULATION.length / 3; i++) {
-          // Get sets of three keypoints for the triangle
-          const points = [
-            TRIANGULATION[i * 3],
-            TRIANGULATION[i * 3 + 1],
-            TRIANGULATION[i * 3 + 2],
-          ].map((index) => keypoints[index]);
-          //  Draw triangle
-          drawPath(ctx, points, true);
-        }
+        // //  Draw Triangles
+        // for (let i = 0; i < TRIANGULATION.length / 3; i++) {
+        //   // Get sets of three keypoints for the triangle
+        //   const points = [
+        //     TRIANGULATION[i * 3],
+        //     TRIANGULATION[i * 3 + 1],
+        //     TRIANGULATION[i * 3 + 2],
+        //   ].map((index) => keypoints[index]);
+        //   //  Draw triangle
+        //   drawPath(ctx, points, true);
+        // }
   
-        // Draw Dots
+        //Draw Dots
         for (let i = 0; i < keypoints.length; i++) {
           const [x, y] = keypoints[i];
 

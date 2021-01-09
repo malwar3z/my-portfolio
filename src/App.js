@@ -9,7 +9,7 @@ import SinglePost from './pages/SinglePost';
 import Skills from './pages/Skills';
 
 //components
-import Footer from './components/Footer';
+//import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
     <BrowserRouter>
     <div className="flex">
       <Navigation/>
-      <main>
+      <main className="w-screen h-screen">
         <Switch>
           <Route component={Home} path='/' exact/>
           <Route component={Contact} path='/contact' />
@@ -29,7 +29,7 @@ function App() {
       </main>
     </div>
       
-      <Footer/>
+      {/* <Footer/> */}
     </BrowserRouter>
   )
 }

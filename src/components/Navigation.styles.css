@@ -11,14 +11,40 @@
   }
 }
 
+.navigation-back {
+  background-color: #111111;
+}
+
+svg {
+  color: #0dfdd2;
+}
+
+.nav-selected svg {
+  /* color: yellow; */
+  color: #fa094a;
+  animation: spin 1s linear infinite;
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
 /* .nav-selection:hover {
-  --tw-translate-x: 1.25rem;
+  --tw-translate-x: 2rem;
+  background-color: rgba(17, 24, 39);
+  color: yellow;
+  border-radius: 10px;
 } */
 
 /* .nav-selection:hover > .section-title {
-  display: "block";
-}
+  display: true;
+} */
 
+/*
 .section-title {
   position: relative;
   color: white;

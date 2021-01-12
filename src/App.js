@@ -17,15 +17,15 @@ function App() {
     <BrowserRouter>
     <div className="flex">
       <Navigation/>
-      <main className="w-screen h-screen">
-        <Switch>
-          <Route component={Home} path='/' exact/>
-          <Route component={Contact} path='/contact' />
-          <Route component={SinglePost} path='/post/:slug' />
-          <Route component={Post} path='/post' />
-          <Route component={Project} path='/project' />
-          <Route component={Skills} path='/skills' />
-        </Switch>
+      <main className="m-auto overflow-auto block max-h-screen">
+          <Switch>
+            <Route component={Home} path='/' exact/>
+            <Route component={Contact} path='/contact' />
+            <Route component={SinglePost} path='/post/:slug' />
+            <Route component={Post} path='/post' />
+            <Route component={Project} path='/project' />
+            <Route component={Skills} path='/skills' />
+          </Switch>
       </main>
     </div>
       

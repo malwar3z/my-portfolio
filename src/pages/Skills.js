@@ -1,121 +1,114 @@
 import React from 'react';
 import { ResponsiveBubbleHtml } from '@nivo/circle-packing';
+import * as sp from '../utils/styleProvider';
 
-const blackColor = '#1a1a1a';
-const aquaColor = '#0dfdd2';
+
 const root = 
 {
 "name": "nivo",
-"color": blackColor,
+"color": sp.blackColor,
 "children": [
                 {
                 "name": "JS",
-                "color":  aquaColor,
-                "loc": 500000
+                "color":  sp.aquaColor,
+                "loc": 800000
                 },
                 {
-                "name": "HTML",
-                "color": aquaColor,
+                "name": "Html",
+                "color": sp.aquaColor,
                 "loc": 400000
                 },
                 {
-                "name": "CSS",
-                "color": aquaColor,
-                "loc": 200000
+                "name": "Css",
+                "color": sp.aquaColor,
+                "loc": 400000
                 },
                 {
                 "name": "React",
-                "color": aquaColor,
-                "loc": 500000
-                },
-                {
-                "name": "Angular",
-                "color": aquaColor,
+                "color": sp.aquaColor,
                 "loc": 300000
                 },
                 {
-                "name": " .NET Webforms ",
-                "color": aquaColor,
-                "loc": 2000000
+                "name": "Angular",
+                "color": sp.aquaColor,
+                "loc": 400000
+                },
+                {
+                "name": "ASP.NET",
+                "color": sp.aquaColor,
+                "loc": 1000000
                 },
                 {
                     "name": "Sql",
-                    "color": aquaColor,
+                    "color": sp.aquaColor,
                     "loc": 500000
                 },
                 {
                 "name": "Git",
-                "color": aquaColor,
-                "loc": 80000
+                "color": sp.aquaColor,
+                "loc": 300000
                 },
-                {
-                "name": ".NET CORE",
-                "color": aquaColor,
-                "loc": 450000
-                },
+                // {
+                // "name": ".Net Core",
+                // "color": aquaColor,
+                // "loc": 450000
+                // },
                 {
                 "name": "C#",
-                "color": aquaColor,
-                "loc": 100000
+                "color": sp.aquaColor,
+                "loc": 400000
                 },
                 {
                 "name": "Java",
-                "color": aquaColor,
-                "loc": 100000
+                "color": sp.aquaColor,
+                "loc": 300000
                 },
             ]
-}
-;
+};
 
 export default function Skills (){
     return (
-        <div className="ml-5 mt-10 mb-auto">
-            <div className="inline-flex">
-                <div className="flex-none w-52 sm:w-52 md:w-1/3  m-5">
+            <div className="w-auto h-auto md:flex 2xl:block">
+                {/* sm:inline-block md-flex */}
+                <div className="text-center m-4">
                     <article>
-                        <p className="text-6xl mb-3" style={{ color:'#0dfdd2'}}>
-                            <b>My <br/> SKILLSET</b>
+                        <p 
+                            className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-aqua mb-5"
+                            >
+                            <b>Skillset</b>
                         </p>
-                        <p className="text-sm text-white h-80 italic" style={{overflow:'auto'}}>
-                            I have been working for 4 years as a Full-stack developer , on both Client and Server side.
+                        <p 
+                            className="sm:w-2 text-sm md:text-lg lg:text-xl xl:text-2xl text-white italic text-center"
+                            >
+                            Currently working as a Full-stack developer , I have been working in the IT world for 4+ Years.
                             <br/>  <br/>
-                            Although i'm labeled as Full-Stack i recently fell in love with the latest front-end frameworks , and i'm 
-                            willing to completely master React and JS , currently working on some personal projects that i'll soon be sharing 
-                            on this website.
-                            <br/>  <br/>
-                            You can check out all the technologies i've used throughout my Dev career on the graph aside.
-                            {/* <br/>  <br/>
-                            I'm really close to hit the 5 year
-                            milestone as a Developer , there's still so much to learn that i can't help not to still consider myself as a Beginner. */}
+                            Although labeled as a Full-Stack Dev I recently fell in love with the latest front-end frameworks , and I'm 
+                            willing to completely master React and JS .
                             <br/> <br/>
                             Check out my 
-                            <a href="https://www.linkedin.com/in/matias-nicolas-alvarez-842080157" style={{ color:'#0dfdd2'}} target="_blank"> Linkedin</a>
+                            <a href="https://www.linkedin.com/in/matias-nicolas-alvarez-842080157" style={{ color:sp.aquaColor}} target="_blank"> Linkedin</a> for further details.
                         </p>
                     </article>
                 </div>
                 <div 
-                    className="hidden w-2/3 md:flex" 
-                    style={{height:400, width:400}}>
+                    className="w-72 h-72 md:w-100 md:h-100 m-auto " 
+                    >
                         
                     <ResponsiveBubbleHtml
                         root={root}
                         identity="name"
                         value="loc"
                         colors={ c => c.color}
-                        // colors={{ scheme: 'nivo' }}
-                        // borderColor="#0dfdd2"
-                        labelTextColor={blackColor}
+                        labelTextColor={sp.blackColor}
                         labelSkipRadius={10}
-                        // labelTextColor={{ from: 'color', modifiers: [ [ 'darker', 0.8 ] ] }}
-                        // borderColor={{ from: 'color', modifiers: [ [ 'darker', 0.3 ] ] }}
                         animate={true}
                         motionStiffness={90}
                         motionDamping={12}
                         isZoomable={false}
                         isInteractive={false}
+                        labelSkipRadius={25}
                     />
                 </div>
             </div>
-        </div>
     );
 }

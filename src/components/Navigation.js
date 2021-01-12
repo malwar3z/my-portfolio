@@ -66,7 +66,7 @@ const NavigationSections = [
 
 export default function Navigation (){ 
     return (
-        <header className="h-screen navigation-back" style={{zIndex:999}}>
+        <header className="h-screen navigation-back w-12" style={{zIndex:999}}>
             <div className="container mx-auto flex justify-between">
                 <nav>
                    {
@@ -79,13 +79,8 @@ export default function Navigation (){
                             className={sect.className}
                            >
                                <div className="flex">
-                                   {/* <span className=" section-title text-left text-base m-auto"> {sect.name} </span> */}
                                     <span className="m-2">{sect.image}</span>
                                </div>
-                               {/* <p className="section-title">
-                                  
-                               </p> */}
-                               
                            </NavLink>
                        ))
                    }

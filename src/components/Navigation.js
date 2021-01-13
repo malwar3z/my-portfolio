@@ -2,7 +2,7 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import './Navigation.styles.css';
 
-const basicStyle = 'block py-1 px-1 mr-4 text-red-100 text-4xl font-bold tracking-widest nav-selection transform';
+const basicStyle = 'block py-1 px-1 m-5 text-red-100 text-4xl font-bold tracking-widest nav-selection transform ';
 const selectedStyle = 'nav-selected'
 
 const NavigationSections = [
@@ -66,10 +66,12 @@ const NavigationSections = [
 
 export default function Navigation (){ 
     return (
-        <header className="h-screen bg-nightBlack w-auto" style={{zIndex:999}}>
-            <div className="container mx-auto flex">
+        <header className="bg-blackNavi z-50 w-auto md:p-2">
+            <div className="container flex">
                 <nav>
+                <div className="md:flex m-auto">
                    {
+                       
                        NavigationSections.map(sect =>(
                            <NavLink 
                             key={sect.id}
@@ -79,12 +81,14 @@ export default function Navigation (){
                             className={sect.className}
                            >
                                <div className="flex">
-                                    {/* <span className="hidden text- md:block">{sect.name}</span> */}
-                                    <span className="m-2 -right-0">{sect.image}</span>
+                                    <span className="hidden text-sm md:block lg:text-base">{sect.name}</span>
+                                    <span className="m-auto md:ml-5">{sect.image}</span>
                                </div>
                            </NavLink>
                        ))
+                       
                    }
+                   </div>
                 </nav>
             </div>
         </header>

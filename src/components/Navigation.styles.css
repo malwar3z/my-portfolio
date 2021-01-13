@@ -15,6 +15,11 @@ svg {
   color: #0dfdd2;
 }
 
+.nav-selected span {
+  /* color: yellow; */
+  color: #fa094a;
+}
+
 .nav-selected svg {
   /* color: yellow; */
   color: #fa094a;

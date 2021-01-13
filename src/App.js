@@ -15,9 +15,13 @@ import Navigation from './components/Navigation';
 function App() {
   return (
     <BrowserRouter>
-    <div className="flex">
+    {/* Il blocco dove renderizziamo tutto contiene 
+    - NAVIGATION section -> responsive su cell barra lato sx , su monitor estesa sopra
+    - PAGES section -> tramite routing renderizzo pagina
+    */}
+    <div className="h-screen flex md:block">
       <Navigation/>
-      <main className="mr-auto ml-auto mb-auto mt-3 overflow-auto block max-h-screen">
+      <main className="mr-auto ml-auto mb-auto mt-3 overflow-auto block max-h-screen bg-blackBg">
           <Switch>
             <Route component={Home} path='/' exact/>
             <Route component={Contact} path='/contact' />
@@ -28,7 +32,6 @@ function App() {
           </Switch>
       </main>
     </div>
-      
       {/* <Footer/> */}
     </BrowserRouter>
   )

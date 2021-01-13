@@ -27,6 +27,7 @@ module.exports = {
         red: colors.rose,
         yellow: colors.amber,
         aqua: "#0dfdd2",
+        nightBlack : "#111111"
       },
     },
   

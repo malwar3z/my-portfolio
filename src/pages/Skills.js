@@ -5,7 +5,7 @@ import * as sp from '../utils/styleProvider';
 
 const root = 
 {
-"name": "nivo",
+"name": "skills",
 "color": sp.blackColor,
 "children": [
                 {
@@ -70,15 +70,15 @@ export default function Skills (){
     return (
             <div className="w-auto h-auto md:flex 2xl:block">
                 {/* sm:inline-block md-flex */}
-                <div className="text-center m-4">
-                    <article>
+                <div className="text-center ml-2 mr-2">
+                    <article className="m-5">
                         <p 
                             className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-aqua mb-5"
                             >
                             <b>Skillset</b>
                         </p>
                         <p 
-                            className="sm:w-2 text-sm md:text-lg lg:text-xl xl:text-2xl text-white italic text-center"
+                            className="text-sm md:text-lg lg:text-xl xl:text-2xl text-white italic"
                             >
                             Currently working as a Full-stack developer , I have been working in the IT world for 4+ Years.
                             <br/>  <br/>

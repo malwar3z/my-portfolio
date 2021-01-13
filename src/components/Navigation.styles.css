@@ -11,10 +11,6 @@
   }
 }
 
-.navigation-back {
-  background-color: #111111;
-}
-
 svg {
   color: #0dfdd2;
 }
@@ -33,20 +29,3 @@ svg {
     }
   }
 }
-/* .nav-selection:hover {
-  --tw-translate-x: 2rem;
-  background-color: rgba(17, 24, 39);
-  color: yellow;
-  border-radius: 10px;
-} */
-
-/* .nav-selection:hover > .section-title {
-  display: true;
-} */
-
-/*
-.section-title {
-  position: relative;
-  color: white;
-  display: none;
-} */

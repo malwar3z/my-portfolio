@@ -17,7 +17,7 @@ function App() {
     <BrowserRouter>
     <div className="flex">
       <Navigation/>
-      <main className="m-auto overflow-auto block max-h-screen">
+      <main className="mr-auto ml-auto mb-auto mt-3 overflow-auto block max-h-screen">
           <Switch>
             <Route component={Home} path='/' exact/>
             <Route component={Contact} path='/contact' />

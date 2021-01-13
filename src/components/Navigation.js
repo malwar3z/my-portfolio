@@ -66,8 +66,8 @@ const NavigationSections = [
 
 export default function Navigation (){ 
     return (
-        <header className="h-screen navigation-back w-12" style={{zIndex:999}}>
-            <div className="container mx-auto flex justify-between">
+        <header className="h-screen bg-nightBlack w-auto" style={{zIndex:999}}>
+            <div className="container mx-auto flex">
                 <nav>
                    {
                        NavigationSections.map(sect =>(
@@ -79,7 +79,8 @@ export default function Navigation (){
                             className={sect.className}
                            >
                                <div className="flex">
-                                    <span className="m-2">{sect.image}</span>
+                                    {/* <span className="hidden text- md:block">{sect.name}</span> */}
+                                    <span className="m-2 -right-0">{sect.image}</span>
                                </div>
                            </NavLink>
                        ))
